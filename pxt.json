@@ -1,0 +1,24 @@
+{
+    "name": "testing",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "SSD1306_OLED": "github:zhuning239/oled12864#955094736abba3fe3a60fc1cdbc89d40436c5259",
+        "testing": "pkg:testing.json"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "testing.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
