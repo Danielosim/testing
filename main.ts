@@ -1,31 +1,18 @@
+music.onEvent(MusicEvent.MelodyNotePlayed, function () {
+    music.playMelody("- - - - - - - - ", 120)
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    music.ringTone(262)
+    music.rest(music.beat(BeatFraction.Whole))
+    music.setVolume(127)
+    music.stopAllSounds()
+    music.changeTempoBy(20)
+    music.setTempo(120)
+    music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
+    music.stopMelody(MelodyStopOptions.All)
+    soundExpression.giggle.playUntilDone()
+    soundExpression.giggle.play()
+    music.setBuiltInSpeakerEnabled(false)
+})
 basic.forever(function () {
-    OLED.init(64, 128)
-    OLED.showNumberWithNewLine(0)
-    OLED.showStringWithNewLine("Hello, OLED!")
-    OLED.showNumberNoNewLine(0)
-    OLED.showStringNoNewLine("Hello, OLED!")
-    OLED.showProgress(0)
-    OLED.drawLine(
-    0,
-    0,
-    0,
-    0
-    )
-    OLED.drawCircle(0, 0, 0)
-    OLED.fillCircle(0, 0, 0)
-    OLED.drawRectangle(
-    0,
-    0,
-    0,
-    0
-    )
-    OLED.fillRectangle(
-    0,
-    0,
-    0,
-    0
-    )
-    OLED.clear()
-    OLED.loadingScreen()
-    OLED.nextLine()
+	
 })
